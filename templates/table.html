@@ -1,0 +1,37 @@
+<h2 class="title">Вес нашей прекрасной <span class="main-color">Викули</span></h2>
+<table class="table">
+    <col width="100">
+    <col width="60">
+    <col width="60">
+    <col width="200">
+    <col width="50">
+    <thead>
+    <tr class="main-color">
+        <th>Дата</th>
+        <th>Вес</th>
+        <th>Прибавка</th>
+        <th>Примечание</th>
+        <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for weight_item in weight_list %}
+        <tr>
+            <td class="td-container">{{ weight_item.date|date:"d.m.Y" }}</td>
+            <td class="td-container">{{ weight_item.weight }}</td>
+            <td class="td-container">{{ weight_item.inc }}</td>
+            <td class="td-container" id="desc_{{ weight_item.id }}">{{ weight_item.description }}</td>
+            <td class="td-container">
+                <span class="glyphicon glyphicon-edit" data-weight_id={{ weight_item.id }} ></span>
+                <a class="delete-item" data-weight_id={{ weight_item.id }}>
+                    <span class="glyphicon glyphicon-remove btn-rmv" ></span>
+                </a>
+                </td>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
+
+
+
+

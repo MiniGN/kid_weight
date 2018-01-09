@@ -1,0 +1,18 @@
+<form id="form_adding" method="post" class="form-inline" action="{% url 'add_weight'%}">{% csrf_token %}
+    <div class="form-group form-e">
+        <label>Дата:</label>
+        <input type="date" name="{{ form.date.name }}" id="date" value="{% now "Y-m-d" %}" class="form-control">
+
+    </div>
+
+    <div class="form-group form-e">
+        <label>Вес:</label>
+        <input type="number" id="weight" style="width:100px" step="any" name="{{ form.weight.name }}" class="form-control">
+    </div>
+    <button type="submit" class="btn btn-primary main-bck-color" style="font-family: 'Pacifico', cursive; font-size: 20px; padding: 2px 12px">Внести</button>
+
+    <div class="alert alert-danger error-msg hidden" >
+        <span id="error_msg"> Indicates a dangerous or potentially negative action. </span>
+    </div>
+
+</form>

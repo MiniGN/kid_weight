@@ -1,0 +1,79 @@
+html,body{
+    height: 100%;
+    max-height: 100%;
+    font-family: 'Roboto', sans-serif;
+
+}
+body{
+
+  display: block;
+  position: relative;
+}
+
+body::after {
+  content: "";
+  background: url('img/memphis-colorful.png');
+  opacity: 0.3;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.error-msg{
+    margin-top: 10px;
+}
+.title {
+    font-family: 'Pacifico', cursive;
+    font-size:45px;
+}
+
+.main-color{
+    color:salmon;
+}
+
+.main-bck-color{
+    background-color:salmon;
+    border-color: salmon;
+}
+
+.main-bck-color:hover{
+    background-color:darksalmon;
+    border-color: darksalmon;
+}
+
+.form-e{
+    padding-right:50px;
+}
+
+.chart_container{
+    margin-top: 30px;
+}
+
+.btn-rmv{
+    color:darkgray;
+}
+
+.btn-rmv:hover{
+    color:lightgray;
+}
+
+.glyphicon-edit{
+    color:indigo;
+}
+.glyphicon-edit:hover{
+    color:darkmagenta;
+}
+.glyphicon-ok{
+    color:lightseagreen;
+}
+.glyphicon-ok:hover{
+    color:darkgreen;
+}
+
+.td-container{
+    height: 51px;
+    vertical-align:middle !important;;
+}
