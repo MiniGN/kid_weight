@@ -1,6 +1,3 @@
-# TODO График среднего
-# TODO ! Удаление веса из таблицы
-# TODO примечание и правка его в таблице
 
 from django.shortcuts import render,HttpResponseRedirect,render_to_response
 from .forms import *
